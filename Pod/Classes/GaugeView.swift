@@ -24,7 +24,7 @@
 import UIKit
 
 @IBDesignable
-public class GaugeView: UIView {
+open class GaugeView: UIView {
   
   ///
   // Class proprty
@@ -120,14 +120,14 @@ public class GaugeView: UIView {
       super.init(coder: aDecoder)
   }
   
-  override public func awakeFromNib() {
+  override open func awakeFromNib() {
     super.awakeFromNib()
     
     setup()
   }
   
   //MARK: - Draw method
-  override public func draw(_ rect: CGRect) {
+  override open func draw(_ rect: CGRect) {
     super.draw(rect)
     
     gaugeLayer.radius = radius
